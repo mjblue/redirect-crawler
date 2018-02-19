@@ -98,7 +98,6 @@ public class ExcelUtil {
 
 			excelWBook = new XSSFWorkbook(new File(excelFile.toURI()));
 
-			//excelWSheet = excelWBook.getSheetAt(0);
 			excelWSheet = excelWBook.getSheet(sheetName);
 
 			int startRow = 1;
@@ -112,7 +111,7 @@ public class ExcelUtil {
 
 			// you can write a function as well to get Column count
 
-			int totalCols = 3;
+			int totalCols = 4;
 
 			tabArray = new String[totalRows][totalCols];
 
